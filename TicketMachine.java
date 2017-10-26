@@ -31,7 +31,7 @@ public class TicketMachine
     {
         int status;
         status = 0;
-        if(balance >=0){
+        if(balance ==0){
         int devolverDinero;
         devolverDinero = balance + total;
         total = 0;
