@@ -27,6 +27,22 @@ public class TicketMachine
         balance = 0;
         total = 0;
     }
+    public int emptyMachine()
+    {
+        int status;
+        status = 0;
+        if(balance >=0){
+        int devolverDinero;
+        devolverDinero = balance + total;
+        total = 0;
+        status = devolverDinero;
+        }
+        else{
+            System.out.println("Operación en curso...");
+            status = -1;
+        }
+        return status;
+    }
 
     /**
      * @Return The price of a ticket.
